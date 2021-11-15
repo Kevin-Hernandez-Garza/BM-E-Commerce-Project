@@ -57,11 +57,6 @@ router.post('/', upload.single('photo'), async (req, res) => {
   }
 });
 
-router.get('/test', (req, res) => {
-  console.log(req);
-  res.json("done")
-})
-
 //Update a product
 router.put('/:id',upload.single('photo'), (req, res) => {
     let img = req.file;
