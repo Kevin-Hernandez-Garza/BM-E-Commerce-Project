@@ -24,7 +24,7 @@ router.get('/:id', (req, res) => {
   })
     .then(data => {
       if(!data) {
-          res.status(404).json({ message: 'No category found with this id' });
+          res.status(404).json({ message: 'No product found with this id' });
           return;
       }
       res.json(data);
@@ -76,7 +76,7 @@ router.put('/:id',upload.single('photo'), (req, res) => {
   })
     .then(data => {
       if(!data) {
-          res.status(404).json({ message: 'No category found with this id' });
+          res.status(404).json({ message: 'No product found with this id' });
           return;
       }
       res.json(data);
@@ -89,7 +89,7 @@ router.put('/:id',upload.single('photo'), (req, res) => {
 
 //Delete a product
 router.delete('/:id', (req, res) => {
-  // delete a category by its `id` value
+  // delete a product by its `id` value
   Female.destroy({
     where: {
       id: req.params.id
@@ -97,7 +97,7 @@ router.delete('/:id', (req, res) => {
   })
     .then(data => {
       if(!data) {
-          res.status(404).json({ message: 'No category found with this id' });
+          res.status(404).json({ message: 'No product found with this id' });
           return;
       }
       res.json(data);
