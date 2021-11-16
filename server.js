@@ -18,7 +18,7 @@ const sess = {
         db: sequelize
     })
 }
-// const hbs = exphbs.create({}) // TODO -- Add Helpers ..
+const hbs = exphbs.create({}) // TODO -- Add Helpers ..
 
 //User Middleware
 
