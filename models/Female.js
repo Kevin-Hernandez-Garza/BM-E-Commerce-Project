@@ -35,7 +35,7 @@ Female.init (
         }
     },
     photo: {
-        type: DataTypes.TEXT,
+        type: DataTypes.STRING,
         allowNull: true
     },
     description: {
