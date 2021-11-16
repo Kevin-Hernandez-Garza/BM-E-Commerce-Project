@@ -4,7 +4,6 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 const sequelize = require('./config/connection'); // TODO -- Check Connectivity
 
-const routes = require('./controllers/'); 
 
 const app = express(); // initate web server as instance from express
 const PORT = process.env.PORT || 3001;
