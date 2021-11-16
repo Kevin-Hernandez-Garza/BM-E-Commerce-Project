@@ -68,9 +68,7 @@ router.post('/', upload.single('photo'), async (req, res) => {
 //   const photo = req.body.photo
 
 //   Female.create({product_name, price, stock, description, photo})
-//   .then(data => {
-//     res.status(201).json(data)
-//   })
+//   .then(data => res.json(data))
 //   .catch(err => {
 //     res.status(500).json(err)
 //   })
