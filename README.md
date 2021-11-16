@@ -1,10 +1,9 @@
 # e-commerce-BM
-test
 ## License
 
 #### License Link 🎫
 
-- [License](LICENSE)
+- [MIT](https://choosealicense.com/licenses/mit/)
 
 #### Badge 🏆
 
@@ -30,6 +29,15 @@ test
 
 ## Contribution
 
--
+- [Kevin Hernandez](https://github.com/Kevin-Hernandez-Garza)
+  
+- [Adam Romano](https://github.com/AdamRomano89)
+  
+- [Marisol Ramirez](https://github.com/MarisolRamirez1031)
+  
+- [Chiara Schafer](https://github.com/ChiaraNS)
+  
+- [Jared Dodson](https://github.com/jareddodson)
+  
 
 ### © Created with 💜 by The Byte-Me Team!
