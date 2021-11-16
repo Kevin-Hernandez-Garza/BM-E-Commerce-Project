@@ -35,46 +35,46 @@ router.get('/:id', (req, res) => {
     });
 });
 
-// //Add a product
-// router.post('/', upload.single('photo'), async (req, res) => {
-//   try {
-//     let img = req.file;
-//     let protocol = req.protocol;
-//     let host = req.get('host');
-//     let imgSrc = `${protocol}://${host}/images/${img.filename}`;
-//     const newFemaleProduct = await Female.create({
-//       product_name: req.body.product_name,
-//       price: req.body.price,
-//       stock: req.body.stock,
-//       description: req.body.description,
-//       photo: imgSrc
-//     });
+//Add a product
+router.post('/', upload.single('photo'), async (req, res) => {
+  try {
+    let img = req.file;
+    let protocol = req.protocol;
+    let host = req.get('host');
+    let imgSrc = `${protocol}://${host}/images/${img.filename}`;
+    const newFemaleProduct = await Female.create({
+      product_name: req.body.product_name,
+      price: req.body.price,
+      stock: req.body.stock,
+      description: req.body.description,
+      photo: imgSrc
+    });
 
-//     res.status(201).json(newFemaleProduct);
+    res.status(201).json(newFemaleProduct);
 
-//   } catch (error) {
-//     res.status(500).json(error.message);
-//   }
-// });
+  } catch (error) {
+    res.status(500).json(error.message);
+  }
+});
 
 
 
 //Add a product
-router.post('/', (req, res) => {
-  const product_name = req.body.product_name,
-  const price = req.body.price,
-  const stock = req.body.stock,
-  const description = req.body.description,
-  const photo = req.body.photo
+// router.post('/', (req, res) => {
+//   const product_name = req.body.product_name,
+//   const price = req.body.price,
+//   const stock = req.body.stock,
+//   const description = req.body.description,
+//   const photo = req.body.photo
 
-  Female.create({product_name, price, stock, description, photo})
-  .then(data => {
-    res.status(201).json(data)
-  })
-  .catch(err => {
-    res.status(500).json(err)
-  })
-})
+//   Female.create({product_name, price, stock, description, photo})
+//   .then(data => {
+//     res.status(201).json(data)
+//   })
+//   .catch(err => {
+//     res.status(500).json(err)
+//   })
+// })
 
 //Update a product
 router.put('/:id',upload.single('photo'), (req, res) => {
