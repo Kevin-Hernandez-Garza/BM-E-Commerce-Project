@@ -266,8 +266,11 @@ h2.products {
   color: gray;
 }
 
+<<<<<<< HEAD
 /* new */
 
+=======
+>>>>>>> ed5bce1380710f7254cf9659162196ade1b58132
 @media (max-width: 768px) {
   .feature-elements {
     flex-direction: column;
@@ -287,7 +290,11 @@ h2.products {
     width: 100%;
     min-height: 15rem;
   }
+<<<<<<< HEAD
   .showcase-image-three {
+=======
+  .showcase-image-three{
+>>>>>>> ed5bce1380710f7254cf9659162196ade1b58132
     background-position: center -90px;
   }
   .show-case-text,
