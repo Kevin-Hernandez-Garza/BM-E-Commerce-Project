@@ -8,6 +8,17 @@
   max-width: 80%;
   margin: auto;
 }
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ul-option {
+  display: flex !important;
+  color: #000 !important;
+}
+
 body {
   font-family: “Roboto”, sans-serif;
 }
@@ -357,6 +368,11 @@ h2.products {
 @media (min-width: 992px) {
 }
 
+@media only screen and (max-width: 960px) {
+  .card {
+  }
+}
+
 /* new end */
 
 /* test forms */
@@ -384,13 +400,4 @@ button {
 
 button:hover {
   background-color: #3486eb;
-}
-
-nav h1:not(first-child) {
-  margin-left: 1.6rem;
-  text-align: center;
-}
-
-nav h1:hover {
-  text-decoration: line-through;
 }
