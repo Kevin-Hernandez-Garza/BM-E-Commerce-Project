@@ -165,19 +165,19 @@ h2.products {
   flex-direction: row-reverse;
 }
 .showcase-image-one {
-  background-image: url("/images/Chanel.jpg");
+  background-image: url("/public/images/D&G.jpeg");
   width: 50%;
   min-height: 30rem;
   background-size: contain;
 }
 .showcase-image-two {
-  background-image: url("/images/D&G.jpg");
+  background-image: url("/public/images/Chanel.jpeg");
   width: 50%;
   min-height: 30rem;
   background-size: contain;
 }
 .showcase-image-three {
-  background-image: url("/images/cologne.jpg");
+  background-image: url("/public/images/cologne.jpeg");
   width: 50%;
   min-height: 30rem;
   background-size: contain;
