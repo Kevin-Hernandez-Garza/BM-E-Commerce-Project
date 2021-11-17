@@ -6,16 +6,14 @@
      <ul class="container col-12">
          <div class="row">
              {{#each products}}
-                <div class="col-4 mb-4">
+                <div class="col-3 mb-4">
                 <li class="d-inline">
                 <div class="card" style="width: 18rem;">
-                <img src="/images/Byte Me Logo (1).jpg" class="card-img-top" alt="...">
+                <img src="{{photo}}" class="card-img-top" alt="...">
                 <div class="card-body">
-                <h5 class="card-title text-black">NAME: {{product_name}}</h5>
-                <p class="card-text text-black">PRICE: {{price}}</p>
-                <p class="card-text text-black">STOCK: {{stock}}</p>
-                <p class="card-text text-black">DESCRIPTION: {{description}}</p>
-                <a href="{{photo}}" class="btn btn-primary" target="_blank">Product Image</a>
+                <h5 class="card-title text-black">{{product_name}}</h5>
+                <p class="card-text text-black">${{price}}</p>
+                <a href="/products" class="btn btn-primary" target="_blank">View Product</a>
                 </div>
                 </div>
             </li>
@@ -30,17 +28,23 @@
         Masculine
     </h2>
 
-    <ul>
-        
+    <ul class="container col-12">
+         <div class="row">
+            {{#each maleProduct}}
+            <div class="col-4 mb-4">
+            <li class="d-inline">
+            <div class="card" style="width: 18rem;">
+            <img src="/images/Byte Me Logo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title text-black">NAME: {{product_name}}</h5>
+            <p class="card-text text-black">PRICE: {{price}}</p>
+            <a href="{{photo}}" class="btn btn-primary" target="_blank">View Product</a>
+            </div>
+            </div>
+            </li>
+         </div>
+        {{/each}}
+         </div>
     </ul>
-</div>
-
-<div>
-    <h2>
-        Reviews
-    </h2>
-
-    <ul>
-        
-    </ul>
+    
 </div>
