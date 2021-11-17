@@ -8,15 +8,12 @@
   max-width: 80%;
   margin: auto;
 }
-
-.header-nav {
+.header-El{
   display: flex;
   justify-content: space-between;
 }
-
-.ul-option {
-  display: flex !important;
-  color: #000 !important;
+.ul-list{
+  display: flex;
 }
 
 body {
