@@ -265,6 +265,8 @@ h2.products {
   color: gray;
 }
 
+
+/* Media query */
 @media (max-width: 768px) {
   .feature-elements {
     flex-direction: column;
