@@ -28,16 +28,20 @@
                 {{!-- <div class="btn-wrapper"> --}}
                 {{!-- <button class="header-btn">LogIn</button> --}}
                 <nav>
-                    {{#if loggedIn}}
+        
                     <h1>
                         <a href="/">checkout</a>
                     </h1>
-                    <button id="logout" class="btn-no-style">logout</button>
-                    {{else}}
+
+                    <h1>
+                        <a href="/" id="logout">logout</a>
+                    </h1>
+                    {{!-- <button id="logout" class="btn-no-style">logout</button> --}}
+                    
                     <h1>
                         <a href="/login">login</a>
                     </h1>
-                    {{/if}}
+
                 </nav>
                 {{!-- </div> --}}
             </div>
@@ -149,8 +153,8 @@
         </section>
     </div>
     
-    {{#if loggedIn}}
-    <script src="/public/javascript/logout.js"></script>
-    {{/if}}
+    
+    <script src="/javascript/logout.js"></script>
+    
 </body>
 </html>

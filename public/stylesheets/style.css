@@ -166,22 +166,22 @@ h2.products {
   flex-direction: row-reverse;
 }
 .showcase-image-one {
-  background-image: url("/images/Chanel.jpg");
+  background-image: url("/images/showcase2.jpeg");
   width: 50%;
   min-height: 30rem;
-  background-size: contain;
+  background-size: cover;
 }
 .showcase-image-two {
-  background-image: url("/images/D&G.jpg");
+  background-image: url("/images/showcase.jpeg");
   width: 50%;
   min-height: 30rem;
-  background-size: contain;
+  background-size: cover;
 }
 .showcase-image-three {
-  background-image: url("/images/cologne.jpg");
+  background-image: url("/images/showcase3.jpeg");
   width: 50%;
   min-height: 30rem;
-  background-size: contain;
+  background-size: cover;
 }
 .show-case-text {
   padding: 20px;
@@ -384,4 +384,27 @@ button {
 
 button:hover {
   background-color: #3486eb;
+}
+
+/* .btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: #225ca3;
+  font-size: 100%;
+  font-weight: bold;
+  transition: color 0.1s;
+  margin-left: 16px;
+}
+
+.btn-no-style:hover {
+  background: none;
+  color: #3486eb;
+} */
+
+nav h1:not(first-child) {
+  margin-left: 1.6rem;
+  text-align: center;
 }
