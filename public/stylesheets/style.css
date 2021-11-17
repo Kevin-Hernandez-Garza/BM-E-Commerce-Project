@@ -1,4 +1,4 @@
-@import url(“https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap”);
+/* @import url(“https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap”); */
 * {
   margin: 0;
   padding: 0;
@@ -126,6 +126,7 @@ h2.products {
   background-color: #f8f9fa;
   /* font-family: "Open Sans Condensed", sans-serif; */
   margin: 1.6rem 0 1.6rem 0;
+  padding: 1.6rem 0;
 }
 
 .feature-section {
@@ -263,4 +264,124 @@ h2.products {
 .footer p {
   padding: 1rem;
   color: gray;
+}
+
+/* new */
+
+@media (max-width: 768px) {
+  .feature-elements {
+    flex-direction: column;
+    height: auto;
+  }
+  .feature-blocks {
+    margin-bottom: 1rem;
+  }
+  .show-case-row-one,
+  .show-case-row-two,
+  .show-case-row-three {
+    flex-direction: column;
+  }
+  .showcase-image-one,
+  .showcase-image-two,
+  .showcase-image-three {
+    width: 100%;
+    min-height: 15rem;
+  }
+  .showcase-image-three {
+    background-position: center -90px;
+  }
+  .show-case-text,
+  .show-case-text h2,
+  .show-case-text p {
+    width: 100%;
+  }
+  header h1 a {
+    font-size: 1.2rem;
+  }
+  header .btn-wrapper button {
+    padding: 5px 10px;
+  }
+  .home-content h2 {
+    font-size: 2rem;
+  }
+  .home {
+    height: 300px;
+  }
+  .home-content input,
+  .home-content button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .home-content button {
+    margin: 0;
+  }
+  .home-content div {
+    padding: 0 1.5rem;
+  }
+  .individual-box {
+    margin-bottom: 20px;
+  }
+  .banner h2 {
+    padding: 2rem;
+  }
+  .banner {
+    min-height: 15rem;
+  }
+  .banner-input input {
+    width: 60%;
+  }
+  .footer {
+    padding: 2rem;
+  }
+  .footer-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer a {
+    padding: 1rem 0.25rem;
+  }
+  .contact-info {
+    margin-bottom: 10px;
+  }
+  .footer p {
+    text-align: center;
+  }
+}
+/* Small
+@media (min-width: 576px) and (max-width: 768px) {
+} */
+/* Medium */
+@media (min-width: 769px) and (max-width: 991px) {
+}
+/* Large */
+@media (min-width: 992px) {
+}
+
+/* new end */
+
+/* test forms */
+a {
+  text-decoration: none;
+  color: #225ca3;
+  font-weight: bold;
+  transition: color 0.1s;
+}
+
+a:hover {
+  color: #3486eb;
+}
+
+button {
+  background-color: #225ca3;
+  border: 0;
+  padding: 1%;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.1s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #3486eb;
 }

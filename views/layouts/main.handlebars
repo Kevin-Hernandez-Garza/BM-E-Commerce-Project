@@ -27,16 +27,18 @@
                 </h1>
                 {{!-- <div class="btn-wrapper"> --}}
                 {{!-- <button class="header-btn">LogIn</button> --}}
-                {{#if loggedIn}}
-                <h1 class="logo if">
-                    <a href="/">checkout</a>
-                </h1>
-                <button id="logout" class="btn-no-style">logout</button>
-                {{else}}
-                <h1 class="logo if">
-                    <a href="/login">login</a>
-                </h1>
-                {{/if}}
+                <nav>
+                    {{#if loggedIn}}
+                    <h1>
+                        <a href="/">checkout</a>
+                    </h1>
+                    <button id="logout" class="btn-no-style">logout</button>
+                    {{else}}
+                    <h1>
+                        <a href="/login">login</a>
+                    </h1>
+                    {{/if}}
+                </nav>
                 {{!-- </div> --}}
             </div>
         </header>

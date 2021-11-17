@@ -8,10 +8,10 @@ const hbs = exphbs.create({}) // TODO -- Add Helpers ..
 
 const routes = require('./controllers/');
 
-const app = express(); // initate web server as instance from express
+const app = express(); // initiate web server as instance from express
 const PORT = process.env.PORT || 3001;
 
-// Cofigs
+// Configs
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const sess = {
     secret: process.env.SECRET,
@@ -21,7 +21,7 @@ const sess = {
     store: new SequelizeStore({
         db: sequelize
     })
-}
+};
 
 
 //User Middleware
