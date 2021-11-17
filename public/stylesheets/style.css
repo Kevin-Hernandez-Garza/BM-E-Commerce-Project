@@ -43,15 +43,14 @@ h2 {
 }
 
 /*  media queries  */
-
-/* @media only screen and (max-width: 980px) {
-  body {
-    overflow: hidden;
+@media only screen and (max-width: 1500px) {
+  .dropdown {
+    display: none;
   }
 }
 
+@media only screen and (max-width: 980px) {
+}
+
 @media only screen and (max-width: 600px) {
-  body {
-    overflow: hidden;
-  }
-} */
+}

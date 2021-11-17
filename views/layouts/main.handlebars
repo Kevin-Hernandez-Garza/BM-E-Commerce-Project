@@ -23,70 +23,70 @@
     <div class="container-fluid">
         {{!-- navbar --}}
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <!-- Container wrapper -->
-    <div class="container-fluid">
-        <!-- Toggle button -->
-        <button
-        class="navbar-toggler"
-        type="button"
-        data-mdb-toggle="collapse"
-        data-mdb-target="#navbarCenteredExample"
-        aria-controls="navbarCenteredExample"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-        >
-        <i class="fas fa-bars"></i>
-        </button>
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarCenteredExample"
+            aria-controls="navbarCenteredExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <i class="fas fa-bars"></i>
+            </button>
 
-        <!-- Collapsible wrapper -->
-        <div
-        class="collapse navbar-collapse justify-content-center"
-        id="navbarCenteredExample"
-        >
-        <!-- Left links -->
-        <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-            </li>
-            {{#if loggedIn}}
-            <li class="nav-item">
-            <a class="nav-link" href="/">Logout</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="/">Checkout</a>
-            </li>
-            {{else}}
-            <li class="nav-item">
-            <a class="nav-link" href="/">Login</a>
-            </li>
-            {{/if}}
-            <!-- Navbar dropdown -->
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                <!-- Dropdown menu -->
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li>
-                    <a class="dropdown-item" href="#">Home</a>
-                    </li>
-                    {{#if loggedIn}}
-                    <li>
-                    <a class="dropdown-item" href="#">Logout</a>
-                    </li>
-                    <li>
-                    <a class="dropdown-item" href="#">Checkout</a>
-                    </li>
-                    {{else}}
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                    <a class="dropdown-item" href="#">Login</a>
-                    </li>
-                    {{/if}}
-                </ul>
-            </li>
-        </ul>
-        <!-- Left links -->
-        </div>
-                <!-- Collapsible wrapper -->
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCenteredExample">
+            <!-- Left links -->
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                {{#if loggedIn}}
+                <li class="nav-item">
+                <a class="nav-link" href="/">Logout</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/">Checkout</a>
+                </li>
+                {{else}}
+                <li class="nav-item">
+                {{!-- <a class="nav-link" href="/login">Login</a> --}}
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Login
+                </button>
+                </li>
+                {{/if}}
+                <!-- Navbar dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                    <!-- Dropdown menu -->
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                        <a class="dropdown-item" href="#">Home</a>
+                        </li>
+                        {{#if loggedIn}}
+                        <li>
+                        <a class="dropdown-item" href="#">Logout</a>
+                        </li>
+                        <li>
+                        <a class="dropdown-item" href="#">Checkout</a>
+                        </li>
+                        {{else}}
+                        <li><hr class="dropdown-divider" /></li>
+                        <li>
+                        <a class="dropdown-item" href="/login">Login</a>
+                        </li>
+                        {{/if}}
+                    </ul>
+                </li>
+            </ul>
+            </div>
+            <!-- Collapsible wrapper -->
             </div>
             <!-- Container wrapper -->
         </nav>
@@ -98,41 +98,8 @@
             </div>
         </div>
 
-
-        <div>
-            <h2>
-                Feminine
-            </h2>
-
-            <ul>
-                
-            </ul>
-        </div>
-
-        <div>
-            <h2>
-                Masculine
-            </h2>
-
-            <ul>
-                
-            </ul>
-        </div>
-
-        <div>
-            <h2>
-                Reviews
-            </h2>
-
-            <ul>
-                
-            </ul>
-        </div>
-
-            
-
+        {{!-- rendering data as HTML --}}
         {{{ body }}}
-
 
         <footer class="bg-light text-center text-white">
         <!-- Grid container -->
@@ -209,7 +176,6 @@
         </div>
         <!-- Copyright -->
         </footer>
-
     </div>
     
     {{#if loggedIn}}
