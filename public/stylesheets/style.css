@@ -8,9 +8,20 @@
   max-width: 80%;
   margin: auto;
 }
+
 .header-El {
   display: flex;
   justify-content: space-between;
+}
+.ul-list {
+  display: flex;
+}
+.ul-list a {
+  display: flex;
+  font-size: 1rem;
+  font-weight: lighter;
+  margin: 10px;
+  text-decoration: none;
 }
 
 /* .card {

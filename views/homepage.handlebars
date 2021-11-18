@@ -1,33 +1,12 @@
-<div class="container-fluid">
+<div class="container-fluid" id="pro">
     <h2 class="products">
-        Feminine
-    </h2>
-
-
-    <div class="row">
-        {{#each products}}
-        <div class="card col-sm-12 col-md-6 col-lg-4 mb-4 text-dark">
-        <img src="{{photo}}" class="card-img-top" alt="...">
-        <div class="card-body">
-        <h5 class="card-title">{{product_name}}</h5>
-        <p class="card-text">${{price}}</p>
-        <a href="#" class="btn btn-primary">View Product</a>
-        </div>
-        </div>
-        {{/each}}
-    </div>
-
-</div>
-
-<div class="container-fluid">
-    <h2 class="products">
-        Masculine
+        Products
     </h2>
 
 
     <div class="row">
         {{#each maleProducts}}
-        <div class="card col-sm-12 col-md-6 col-lg-4 mb-4 text-dark">
+        <div class="card col-sm-12 col-md-4 col-lg-3 mb-4 text-dark">
         <img src="{{photo}}" class="card-img-top" alt="...">
         <div class="card-body">
         <h5 class="card-title">{{product_name}}</h5>
