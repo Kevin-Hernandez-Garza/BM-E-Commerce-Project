@@ -33,19 +33,19 @@ router.get("/", async (req, res) => {
       console.log(req.session);
 
     // DB requests
-    const dbFemaleData = await Female.findAll({
-      attributes: [
-        "id",
-        "product_name",
-        "price",
-        "photo",
-      ],
-    });
-    const dbMaleData = await Male.findAll({});
+    let dbFemaleData = await Female.findAll({});
+    let dbMaleData = await Male.findAll({});
+
+    // Filtering
+    if(req.query.search) {
+      dbFemaleData = dbFemaleData.filter(product => product.product_name.toLowerCase().includes(req.query.search.toLowerCase())),
+      dbMaleData = dbMaleData.filter(product => product.product_name.toLowerCase().includes(req.query.search.toLowerCase()));
+    }
 
     // Converting
-    const productsforFemale = dbFemaleData.map((data) => data.get({ plain: true }));
-    const productsForMale = dbMaleData.map(data => data.get({plain: true}));
+    let productsforFemale = dbFemaleData.map((data) => data.get({ plain: true }));
+    let productsForMale = dbMaleData.map(data => data.get({plain: true}));
+
         
     // Send The Response
     res.render('homepage', {
@@ -85,6 +85,7 @@ router.get("/", async (req, res) => {
 
     // res.render('product', { product })
     const {gender} = req.params;
+    const {search} = req.query;
     if (gender === "male") {
       const dbData = await Male.findOne({
         where: {id: req.params.id}
