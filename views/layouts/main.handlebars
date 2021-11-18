@@ -19,13 +19,17 @@
       <header class ="header-El">
         <h1>BYTEME</h1>
         <ul class="ul-list">
-          <a href=>Login</a>
-          <a href=>Logout</a>
-          <a href=>Checkout</a>
+          {{#if loggedIn}}
+            <a href="#" id="logout">Logout</a>
+            <a href=>Checkout</a>
+            {{else}}
+            <a href="/login" >Login</a>
+          {{/if}}
+          
         </ul>
       </header>
 
-    <div class="container-fluid">
+    {{!-- <div class="container"> --}}
 
         <!-- Hero Section -->
         <section class="home">
@@ -39,78 +43,13 @@
         </section>
         <!-- Hero Section END -->
 
-        <!-- Show Case Section Start -->
-        <section class="show-case">
-        <div>
-            <div class="show-case-row-one">
-            <div class="showcase-image-one"></div>
-            <div class="show-case-text">
-                <h2>The Alchemist's Garden line</h2>
-                <p class="secondary-font">
-                Inspired by the first perfumery containers displayed on the wooden shelves of antique apothecaries, the fragrance is enclosed in a precious, black lacquered glass bottle with a porcelain effect, adorned with gold accents.
-                </p>
-            </div>
-            </div>
-            <div class="show-case-row-two">
-            <div class="showcase-image-two"></div>
-            <div class="show-case-text">
-                <h2>"A Forgotten Rose" perfumed oil</h2>
-                <p class="secondary-font">
-                Gold accents form evocative symbols and delicate naturalistic motifs on the perfumed oils' precious containers. Inspired by the first perfumery containers displayed on the wooden shelves of antique apothecaries, the sage green lacquered glass bottles with porcelain effect reveal a touche oreille—a glass pipette style applicator.
-                </p>
-            </div>
-            </div>
-            <div class="show-case-row-three">
-            <div class="showcase-image-three"></div>
-            <div class="show-case-text">
-                <h2>The scent is presented in a tall and slender bottle</h2>
-                <p class="secondary-font">
-                Base notes of Patchouli, embodying a modern expression of sensuality, mystery, and intrigue. The dry down is intensified with the masculine richness of Cedarwood.
-
-                </p>
-            </div>
-            </div>
-        </div>
-        </section>
-        <!-- Show Case Section End -->
-
         {{!-- rendering data as HTML --}}
         {{{ body }}}
 
-        <!-- Testimonials Section Start -->
-        <section class="people">
-        <h2>What people are saying...</h2>
-        <div class="individuals-row">
-            <div class="individual">
-            <div class="individual-box">
-                <img src="/images/testimonials-1.jpeg" alt="David" />
-                <h3>Margaret E.</h3>
-                <p>“This is fantastic! Thanks so much guys! I found the scent for me!“</p>
-            </div>
-            </div>
-            <div class="individual">
-            <div class="individual-box">
-                <img src="/images/testimonials-2.jpeg" alt="David"/>
-                <h3>Fred S.</h3>
-                <p>
-                “ByteME is amazing. I’ve been using their products for years! Never disappoints.”
-                </p>
-            </div>
-            </div>
-            <div class="individual">
-            <div class="individual-box">
-                <img src="/images/testimonials-3.jpeg" alt="David" />
-                <h3>Sarah W.</h3>
-                <p>
-                "Thanks so much for making these great products available to
-                us!"
-                </p>
-            </div>
-            </div>
-        </div>
-        </section>
-        <!-- Testimonials Section End -->
         
+        
+
+
         <section class="footer">
             <div class="footer-bar">
 
@@ -131,10 +70,9 @@
 
             <p>&copy;ByteME 2021. All Rights Reserved</p>
         </section>
-    </div>
-    
-    
+    {{!-- </div> --}}
     <script src="/javascript/logout.js"></script>
+
     
 </body>
 </html>

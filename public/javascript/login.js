@@ -19,7 +19,9 @@ async function signupFormHandler(event) {
 
         // check the response status
         if (response.ok) {
-        console.log('success');
+        // console.log('success');
+        // alert("Wlecome Back");
+        document.location.replace('/');
         } else {
             alert(response.statusText);
         }

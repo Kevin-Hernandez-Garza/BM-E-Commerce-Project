@@ -8,20 +8,31 @@
   max-width: 80%;
   margin: auto;
 }
-.header-El{
+
+.header-El {
   display: flex;
   justify-content: space-between;
 }
-.ul-list{
+.ul-list {
   display: flex;
 }
-.ul-list a{
+.ul-list a {
   display: flex;
   font-size: 1rem;
   font-weight: lighter;
   margin: 10px;
   text-decoration: none;
 }
+
+/* .card {
+  display: flex !important;
+  justify-content: center !important;
+} */
+
+/* .ul-option {
+  display: flex !important;
+  color: #000 !important;
+} */
 
 body {
   font-family: “Roboto”, sans-serif;
@@ -37,7 +48,6 @@ header {
 /* Nesting */
 /* inline block inline-block none */
 header h1 {
-  
   color: #000;
   display: inline-block;
   justify-content: space-between;
@@ -158,6 +168,7 @@ h2.products {
   width: 50%;
   min-height: 33rem;
   background-size: cover;
+  transform: rotateY(180);
 }
 .showcase-image-two {
   background-image: url("/images/showcase.jpeg");
@@ -346,8 +357,8 @@ h2.products {
 }
 
 @media only screen and (max-width: 960px) {
-  .card {
-  }
+  /* .card {
+  } */
 }
 
 /* new end */

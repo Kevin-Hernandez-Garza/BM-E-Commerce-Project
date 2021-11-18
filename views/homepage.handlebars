@@ -1,50 +1,111 @@
-<div>
-    <h2 class="products">
-        Feminine
-    </h2>
-
-     <ul>
-         <div class="row">
-             {{#each products}}
-                <div>
-                <li class="d-inline">
-                <div class="card" style="width: 18rem;">
-                <img src="{{photo}}" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title text-black">{{product_name}}</h5>
-                <p class="card-text text-black">${{price}}</p>
-                <a href="/products" class="btn btn-primary" target="_blank">View Product</a>
-                </div>
-                </div>
-            </li>
-         </div>
-        {{/each}}
-         </div>
-    </ul>
-</div>
-
-<div>
-    <h2 class="products">
-        Masculine
-    </h2>
-
-    <ul>
-         <div class="row">
-            {{#each maleProduct}}
-            <div>
-            <li class="d-inline">
-            <div class="card" style="width: 18rem;">
-            <img src="{{photo}}" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title text-black">{{product_name}}</h5>
-            <p class="card-text text-black">${{price}}</p>
-            <a href="/products" class="btn btn-primary" target="_blank">View Product</a>
+<!-- Show Case Section Start -->
+        <section class="show-case">
+        <div>
+            <div class="show-case-row-one">
+            <div class="showcase-image-one"></div>
+            <div class="show-case-text">
+                <h2>The Alchemist's Garden line</h2>
+                <p class="secondary-font">
+                Inspired by the first perfumery containers displayed on the wooden shelves of antique apothecaries, the fragrance is enclosed in a precious, black lacquered glass bottle with a porcelain effect, adorned with gold accents.
+                </p>
             </div>
             </div>
-            </li>
-         </div>
+            <div class="show-case-row-two">
+            <div class="showcase-image-two"></div>
+            <div class="show-case-text">
+                <h2>"A Forgotten Rose" perfumed oil</h2>
+                <p class="secondary-font">
+                Gold accents form evocative symbols and delicate naturalistic motifs on the perfumed oils' precious containers. Inspired by the first perfumery containers displayed on the wooden shelves of antique apothecaries, the sage green lacquered glass bottles with porcelain effect reveal a touche oreille—a glass pipette style applicator.
+                </p>
+            </div>
+            </div>
+            <div class="show-case-row-three">
+            <div class="showcase-image-three"></div>
+            <div class="show-case-text">
+                <h2>The scent is presented in a tall and slender bottle</h2>
+                <p class="secondary-font">
+                Base notes of Patchouli, embodying a modern expression of sensuality, mystery, and intrigue. The dry down is intensified with the masculine richness of Cedarwood.
+
+                </p>
+            </div>
+            </div>
+        </div>
+        </section>
+        <!-- Show Case Section End -->
+
+
+<div class="container-fluid" id="pro">
+    <h2 class="products">
+        MASCLINE
+    </h2>
+
+
+    <div class="row">
+        {{#each maleProducts}}
+        <div class="card col-sm-12 col-md-4 col-lg-3 mb-4 text-dark">
+        <img src="{{photo}}" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">{{product_name}}</h5>
+        <p class="card-text">${{price}}</p>
+        <a href="/products/male/{{id}}" class="btn btn-primary">View Product</a>
+        </div>
+        </div>
         {{/each}}
-         </div>
-    </ul>
-    
+    </div>
 </div>
+
+
+<div class="container-fluid" id="pro">
+
+    <h2 class="products">
+        FEMININE
+    </h2>
+
+    <div class="row">
+        {{#each femaleProducts}}
+        <div class="card col-sm-12 col-md-4 col-lg-3 mb-4 text-dark">
+        <img src="{{photo}}" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">{{product_name}}</h5>
+        <p class="card-text">${{price}}</p>
+        <a href="/products/{{id}}" class="btn btn-primary">View Product</a>
+        </div>
+        </div>
+        {{/each}}
+    </div>
+
+</div>
+
+<!-- Testimonials Section Start -->
+        <section class="people">
+        <h2>What people are saying...</h2>
+        <div class="individuals-row">
+            <div class="individual">
+            <div class="individual-box">
+                <img src="/images/testimonials-1.jpeg" alt="David" />
+                <h3>Margaret E.</h3>
+                <p>“This is fantastic! Thanks so much guys! I found the scent for me!“</p>
+            </div>
+            </div>
+            <div class="individual">
+            <div class="individual-box">
+                <img src="/images/testimonials-2.jpeg" alt="David"/>
+                <h3>Fred S.</h3>
+                <p>
+                “ByteME is amazing. I’ve been using their products for years! Never disappoints.”
+                </p>
+            </div>
+            </div>
+            <div class="individual">
+            <div class="individual-box">
+                <img src="/images/testimonials-3.jpeg" alt="David" />
+                <h3>Sarah W.</h3>
+                <p>
+                "Thanks so much for making these great products available to
+                us!"
+                </p>
+            </div>
+            </div>
+        </div>
+        </section>
+        <!-- Testimonials Section End -->
