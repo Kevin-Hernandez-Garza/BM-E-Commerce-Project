@@ -168,6 +168,7 @@ h2.products {
   width: 50%;
   min-height: 33rem;
   background-size: cover;
+  transform: rotateY(180);
 }
 .showcase-image-two {
   background-image: url("/images/showcase.jpeg");
