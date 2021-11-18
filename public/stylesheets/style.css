@@ -12,8 +12,11 @@
   display: flex;
   justify-content: space-between;
 }
-.ul-list{
+.ul-list li{
   display: flex;
+  font-size: 1rem;
+  font-weight: lighter;
+  margin: 10px;
 }
 
 body {
