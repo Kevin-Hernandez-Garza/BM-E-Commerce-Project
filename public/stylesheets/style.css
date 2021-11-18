@@ -8,8 +8,7 @@
   max-width: 80%;
   margin: auto;
 }
-
-.header-nav {
+.header-El {
   display: flex;
   justify-content: space-between;
 }
@@ -32,44 +31,16 @@ body {
 }
 /* Header */
 header {
-  background-color: #f8f9fa;
   font-size: 0;
   padding: 10px 0;
 }
 /* Nesting */
 /* inline block inline-block none */
 header h1 {
+  color: #000;
   display: inline-block;
-  /* vertical-align: middle; */
-  /* width: 50%; */
   justify-content: space-between;
 }
-
-header a {
-  color: #000;
-}
-
-/* header .btn-wrapper {
-  display: inline-block;
-  vertical-align: middle;
-  width: 50%;
-  text-align: right;
-}
-header .btn-wrapper button {
-  background-color: #0d6efd;
-  color: #fff;
-  padding: 10px 15px;
-  border: 0;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  -o-border-radius: 7px;
-  -ms-border-radius: 7px;
-  border-radius: 7px;
-  cursor: pointer;
-  text-transform: capitalize;
-  transition: background 0.5s;
-} */
-
 .home {
   background-image: url("/images/home.jpeg");
   height: 500px;
@@ -184,19 +155,19 @@ h2.products {
 .showcase-image-one {
   background-image: url("/images/showcase2.jpeg");
   width: 50%;
-  min-height: 30rem;
+  min-height: 33rem;
   background-size: cover;
 }
 .showcase-image-two {
   background-image: url("/images/showcase.jpeg");
   width: 50%;
-  min-height: 30rem;
+  min-height: 33rem;
   background-size: cover;
 }
 .showcase-image-three {
   background-image: url("/images/showcase3.jpeg");
   width: 50%;
-  min-height: 30rem;
+  min-height: 33rem;
   background-size: cover;
 }
 .show-case-text {
