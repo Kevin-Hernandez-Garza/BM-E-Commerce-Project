@@ -70,20 +70,36 @@ router.get("/", async (req, res) => {
   });
 
   // Individual PRoduct
-  router.get('/male/:id', async (req, res) => {
+  router.get('/products/:gender/:id', async (req, res) => {
     let product;
-    const path = req.originalUrl;
+    /* const path = req.originalUrl;
     if (path.split("/")[1] === "male") {
       product = await Male.findOne({where: {id: req.params.id}});
     } else {
       product = await Female.findOne({where: {id: req.params.id}});
+    } */
+
+
+    // if(!product) return res.status(404).json("not found");
+
+
+    // res.render('product', { product })
+    const {gender} = req.params;
+    if (gender === "male") {
+      const dbData = await Male.findOne({
+        where: {id: req.params.id}
+      });
+      product = dbData.get({plain: true});
+      if(!dbData) return res.status(404).end();
+      return res.render('product', {product});
     }
-
-    if(!product) return res.status(404).json("not found");
-
-
-    res.render('product', { product });
-
+    const dbData = await Female.findOne({
+      where: {id: req.params.id}
+    });
+    product = dbData.get({plain: true});
+    if(!dbData) return res.status(404).end();
+    return res.render('product', {product});
+    // res.json({product});
   });
 
 module.exports = router;
