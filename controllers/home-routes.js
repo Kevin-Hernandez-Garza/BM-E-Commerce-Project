@@ -3,6 +3,30 @@ const sequelize = require("../config/connection");
 const { User, Female, Male, Review } = require("../models");
 
 
+
+router.get("/", (req, res) => {
+    console.log(req.session);
+
+
+    Male.findAll({
+      attributes: [
+        "id",
+        "product_name",
+        "price",
+        "photo",
+      ],
+    })
+      .then((dbMaleData) => {
+        const maleProducts = dbMaleData.map((data) => data.get({ plain: true }));
+        res.render("homepage", { maleProducts });
+      })
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  });
+
+
 router.get("/", (req, res) => {
     console.log(req.session);
 
@@ -25,6 +49,8 @@ router.get("/", (req, res) => {
       });
   });
 
+
+  // login
   router.get('/login', (req, res) => {
     if(req.session.loggedIn) {
         res.redirect('/');
@@ -33,24 +59,5 @@ router.get("/", (req, res) => {
 
     res.render('login');
   });
-
-// router.get("/", (req, res) => {
-//     Male.findAll({
-//       attributes: [
-//         "id",
-//         "product_name",
-//         "price",
-//         "photo",
-//       ],
-//     })
-//       .then((dbMaleData) => {
-//         const maleProduct = dbMaleData.map((data) => data.get({ plain: true }));
-//         res.render("homepage", { maleProduct });
-//       })
-//       .catch((err) => {
-//         console.log(err);
-//         res.status(500).json(err);
-//       });
-//   });
 
 module.exports = router;

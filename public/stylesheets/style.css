@@ -14,10 +14,15 @@
   justify-content: space-between;
 }
 
-.ul-option {
+/* .card {
+  display: flex !important;
+  justify-content: center !important;
+} */
+
+/* .ul-option {
   display: flex !important;
   color: #000 !important;
-}
+} */
 
 body {
   font-family: “Roboto”, sans-serif;
@@ -369,8 +374,8 @@ h2.products {
 }
 
 @media only screen and (max-width: 960px) {
-  .card {
-  }
+  /* .card {
+  } */
 }
 
 /* new end */
