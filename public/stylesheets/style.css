@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
 }
-.ul-list li{
+.ul-list a{
   display: flex;
   font-size: 1rem;
   font-weight: lighter;
