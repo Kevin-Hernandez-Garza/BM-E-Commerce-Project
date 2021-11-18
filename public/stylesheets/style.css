@@ -20,6 +20,7 @@
   font-size: 1rem;
   font-weight: lighter;
   margin: 10px;
+  text-decoration: none;
 }
 
 body {
@@ -30,7 +31,6 @@ body {
 }
 /* Header */
 header {
-  background-color: #f8f9fa;
   font-size: 0;
   padding: 10px 0;
 }
@@ -156,19 +156,19 @@ h2.products {
 .showcase-image-one {
   background-image: url("/images/showcase2.jpeg");
   width: 50%;
-  min-height: 30rem;
+  min-height: 33rem;
   background-size: cover;
 }
 .showcase-image-two {
   background-image: url("/images/showcase.jpeg");
   width: 50%;
-  min-height: 30rem;
+  min-height: 33rem;
   background-size: cover;
 }
 .showcase-image-three {
   background-image: url("/images/showcase3.jpeg");
   width: 50%;
-  min-height: 30rem;
+  min-height: 33rem;
   background-size: cover;
 }
 .show-case-text {
