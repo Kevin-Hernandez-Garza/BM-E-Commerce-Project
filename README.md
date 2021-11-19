@@ -1,7 +1,10 @@
 # e-commerce-BM
+
 ## Website
 - You can find the live URL [here](https://byteme-ecommerce.herokuapp.com/)!
+
 ## License
+
 
 #### License Link 🎫
 
@@ -20,6 +23,7 @@
 - [Installation 🛠](#installation)
 - [Usage 🎮](#usage)
 - [Contribution 👾](#contribution)
+- [Honorable Mentions](#honorable)
 
 ## Installation
 
