@@ -1,4 +1,4 @@
-# e-commerce-BM
+# Byte Me Fragrance
 
 ## Website
 - You can find the live URL [here](https://byteme-ecommerce.herokuapp.com/)!
@@ -14,16 +14,17 @@
 
 [![Badge](https://img.shields.io/badge/license-MIT-brightgreen/)](https://img.shields.io/badge/license-MIT-brightgreen/)
 
-## Description 📖
-
-- We present to you the only website you will ever visit for your cologne or perfume products again! Browse our collection of Men's and Women's fragrances or you can create an account and login to sell your own fragrances and leave reviews on other products! 
-
 ## Table of Contents
 
-- [Installation 🛠](#installation)
-- [Usage 🎮](#usage)
-- [Contribution 👾](#contribution)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribution](#contribution)
 - [Honorable Mentions](#honorable-mentions)
+
+## Description
+
+- We present to you the only website you will ever visit for your cologne or perfume products again! Browse our collection of Men's and Women's fragrances or you can create an account and login to sell your own fragrances and leave reviews on other products! 
 
 ## Installation
 
@@ -43,6 +44,10 @@ npm start
 ## Usage
 
 - This is an E-Commerce website designed for the modern fragrance fanatic and the every day shopper! You can browse our unique collection and make purchases as well as sign in to sell your own products and leave reviews on fragrances you have purchased.
+- You can sign up through our login page:
+![image](https://user-images.githubusercontent.com/84286137/142689681-5dbed39b-c687-4804-af2f-21c700f7cf85.png)
+- And once you have signed up you will be able to login using the login field:
+![image](https://user-images.githubusercontent.com/84286137/142689928-fee61f17-b89f-4992-9a6f-a7506f9eda38.png)
 
 ## Contribution
 
