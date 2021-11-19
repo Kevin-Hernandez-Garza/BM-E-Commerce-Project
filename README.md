@@ -23,7 +23,7 @@
 - [Installation 🛠](#installation)
 - [Usage 🎮](#usage)
 - [Contribution 👾](#contribution)
-- [Honorable Mentions](#honorable)
+- [Honorable Mentions](#honorable-mentions)
 
 ## Installation
 
@@ -56,7 +56,7 @@ npm start
   
 - [Jared Dodson](https://github.com/jareddodson)
 
-#### Honorable mentions:
+#### Honorable mentions
 - [Google](https://google.com)
 - [Stack Overflow](https://stackoverflow.com)
   
