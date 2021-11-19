@@ -19,7 +19,7 @@
 
 - [Installation 🛠](#installation)
 - [Usage 🎮](#usage)
--[Technology 🖥️](#technology)
+- [Technology 🖥️](#technology)
 - [Contribution 👾](#contribution)
 
 ## Installation
@@ -43,16 +43,16 @@ npm start
 
 ## Technology
 
--HTML
--CSS
--JavaScript
--Handlebars
--Node.js
--MySQL
--REST api
--Heroku
--JawsDB
-
+- HTML
+- CSS
+- JavaScript
+- Handlebars
+- Node.js
+- MySQL
+- REST api
+- Heroku
+- JawsDB
+  
 ## Contribution
 
 - [Kevin Hernandez](https://github.com/Kevin-Hernandez-Garza)
