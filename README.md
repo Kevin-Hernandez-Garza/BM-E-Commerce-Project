@@ -41,6 +41,14 @@ npm start
 
 - This is an E-Commerce website designed for the modern fragrance fanatic and the every day shopper! You can browse our unique collection and make purchases as well as sign in to sell your own products and leave reviews on fragrances you have purchased.
 
+***You can sign up through our login page:***
+
+![image](https://user-images.githubusercontent.com/84286137/142689681-5dbed39b-c687-4804-af2f-21c700f7cf85.png)
+
+***And once you have signed up you will be able to login using the login field:***
+
+![image](https://user-images.githubusercontent.com/84286137/142689928-fee61f17-b89f-4992-9a6f-a7506f9eda38.png)
+
 ## Technology
 
 - HTML
