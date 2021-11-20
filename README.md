@@ -1,6 +1,9 @@
 # e-commerce-BM
 ## Website
 - You can find the live URL [here](https://byteme-ecommerce.herokuapp.com/)!
+
+![BM Fragrance (1)](https://user-images.githubusercontent.com/84286137/142733765-a798bfd3-6452-4113-9e8c-a606bd2038a4.gif)
+
 ## License
 
 #### License Link 🎫
