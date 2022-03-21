@@ -1,0 +1,98 @@
+
+<!-- Search Section -->
+<form id="search">
+    <div class="input-group input-group-lg shadow rounded">
+        <input name="search" type="text" class="form-control" placeholder="Search ..." aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <button class="input-group-text bg-primary text-white" id="inputGroup-sizing-lg">Search</span>
+    </div>
+</form>
+
+
+<div class="container-fluid" id="pro">
+    <h2 class="products bg-transparent">
+        MASCULINE
+    </h2>
+
+    <div class="card mb-3">
+  <img class="card-img-top" src="/images/6.jpeg" alt="Card image cap">
+</div>
+
+
+    <div class="row mt-5">
+        {{#each maleProducts}}
+        <div class="card col-sm-12 col-md-4 col-lg-3 mb-4 text-dark">
+        <img src="{{photo}}" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">{{product_name}}</h5>
+        <p class="card-text">${{price}}</p>
+        <a href="/products/male/{{id}}" class="btn btn-primary">View Product</a>
+        </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+
+<div class="container-fluid" id="pro">
+
+<div class="container-fluid" id="pro">
+    <h2 class="products bg-transparent">
+        FEMININE
+    </h2>
+
+    <div class="card mb-3">
+  <img class="card-img-top" src="/images/7.jpeg" alt="Card image cap">
+</div>
+
+    <div class="row mt-5">
+        {{#each femaleProducts}}
+        <div class="card col-sm-12 col-md-4 col-lg-3 mb-4 text-dark">
+        <img src="{{photo}}" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">{{product_name}}</h5>
+        <p class="card-text">${{price}}</p>
+        <a href="/products/female/{{id}}" class="btn btn-primary">View Product</a>
+        </div>
+        </div>
+        {{/each}}
+    </div>
+
+</div>
+
+<div class="card mb-3">
+  <img class="card-img-top" src="/images/GAB-7017_Banner_2021_January_CODE-EDP_CLP-DESKTOP_1920x524 8.09.48 AM.jpeg" alt="Card image cap">
+</div>
+
+<!-- Testimonials Section Start -->
+        <section class="people">
+        <h2>What people are saying...</h2>
+        <div class="individuals-row">
+            <div class="individual">
+            <div class="individual-box">
+                <img src="/images/testimonials-1.jpeg" alt="David" />
+                <h3>Margaret E.</h3>
+                <p>“This is fantastic! Thanks so much guys! I found the scent for me!“</p>
+            </div>
+            </div>
+            <div class="individual">
+            <div class="individual-box">
+                <img src="/images/testimonials-2.jpeg" alt="David"/>
+                <h3>Fred S.</h3>
+                <p>
+                “ByteME is amazing. I’ve been using their products for years! Never disappoints.”
+                </p>
+            </div>
+            </div>
+            <div class="individual">
+            <div class="individual-box">
+                <img src="/images/testimonials-3.jpeg" alt="David" />
+                <h3>Sarah W.</h3>
+                <p>
+                "Thanks so much for making these great products available to
+                us!"
+                </p>
+            </div>
+            </div>
+        </div>
+        </section>
+        <!-- Testimonials Section End -->

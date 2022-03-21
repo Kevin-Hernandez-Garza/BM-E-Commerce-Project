@@ -57,6 +57,23 @@ router.post('/', upload.single('photo'), async (req, res) => {
   }
 });
 
+
+
+// //Add a product
+// router.post('/', (req, res) => {
+//   const product_name = req.body.product_name,
+//   const price = req.body.price,
+//   const stock = req.body.stock,
+//   const description = req.body.description,
+//   const photo = req.body.photo
+
+//   Female.create({product_name, price, stock, description, photo})
+//   .then(data => res.json(data))
+//   .catch(err => {
+//     res.status(500).json(err)
+//   })
+// })
+
 //Update a product
 router.put('/:id',upload.single('photo'), (req, res) => {
     let img = req.file;

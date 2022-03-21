@@ -3,11 +3,15 @@ const path = require('path');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const sequelize = require('./config/connection'); // TODO -- Check Connectivity
+const hbs = exphbs.create({}) // TODO -- Add Helpers ..
+// const helpers = require('./utils/helpers');
 
-const app = express(); // initate web server as instance from express
+const routes = require('./controllers/');
+
+const app = express(); // initiate web server as instance from express
 const PORT = process.env.PORT || 3001;
 
-// Cofigs
+// Configs
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const sess = {
     secret: process.env.SECRET,
@@ -17,8 +21,8 @@ const sess = {
     store: new SequelizeStore({
         db: sequelize
     })
-}
-// const hbs = exphbs.create({}) // TODO -- Add Helpers ..
+};
+
 
 //User Middleware
 
@@ -27,8 +31,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, `public`)));
 app.use(session(sess)); 
-// app.engine('handlebars', hbs.engine); // TODO -- Uncomment after Test API
-// app.set('view engine', 'handlebars'); // TODO -- UnComment After Test API
+app.engine('handlebars', hbs.engine); // TODO -- Uncomment after Test API
+app.set('view engine', 'handlebars'); // TODO -- UnComment After Test API
 
 
 // Register API & FE Routes
